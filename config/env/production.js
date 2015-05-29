@@ -12,6 +12,35 @@
 
 module.exports = {
 
+
+  connections: {
+    prodMongoServer: {
+      adapter: 'sails-mongo',
+      url: process.env.MONGOLAB_URI
+    //   host: 'localhost',
+    //   port: 27017,
+    // // user: 'username',
+    // // password: 'password',
+    //   database: 'SailsBloggyAppDev'
+     }
+   },
+
+
+  models: {
+    connection: 'devMongoServer',
+    // migrate: 'alter'
+  }
+
+
+
+
+
+
+
+
+
+
+
   /***************************************************************************
    * Set the default database connection for models in the production        *
    * environment (see config/connections.js and config/models.js )           *
