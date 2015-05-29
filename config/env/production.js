@@ -27,7 +27,7 @@ module.exports = {
 
 
   models: {
-    connection: 'devMongoServer',
+    connection: 'prodMongoServer',
     // migrate: 'alter'
   }
 
